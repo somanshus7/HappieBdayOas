@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffe5ef">
+<meta name="description" content="A little birthday universe made just for Oas.">
+<title>For Oas 💗 — Birthday Party</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<div class="hearts" aria-hidden="true"></div>
+<div class="topbar">
+  <div class="brand">✦ OAS' LITTLE UNIVERSE</div>
+  <button class="music-toggle" id="musicToggle" aria-label="Turn birthday music on">♫ <span id="musicLabel">Play the birthday vibe</span><b class="equalizer"><i></i><i></i><i></i><i></i></b></button>
+</div>
+<main>
+<section class="screen active" id="gate">
+  <div class="orbit-lock"><span>✦</span><div class="lock">🔐</div></div>
+  <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p><h1>Hey, Oas! 💗</h1>
+  <p class="sub">A tiny world made just for your birthday.</p>
+  <p class="hint">Enter the secret code to unlock your surprise</p>
+  <div class="pin" id="pinDots"><span>○</span><span>○</span><span>○</span><span>○</span></div>
+  <div class="keypad" id="keypad"></div><p class="error" id="error" aria-live="polite"></p>
+  <p class="tiny">Hint: the code is <b>200</b> ✨</p>
+  <div class="tiny-note">Psst… turn on the music for the full birthday mood 🎶</div>
+</section>
+<section class="screen" id="welcome">
+  <p class="eyebrow">TODAY IS ALL ABOUT YOU</p><div class="crown">♛</div>
+  <h1>Happy Birthday,<br><em>Oas!</em> 🎂</h1><p class="sub">Ready for your little birthday adventure?</p>
+  <div class="big-emoji">🎀</div><div class="sound-line"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <button class="primary" data-next="cake">Let's celebrate <span>→</span></button>
+</section>
+<section class="screen" id="cake">
+  <p class="eyebrow">MAKE A WISH</p><h2>One candle, a thousand wishes</h2><p class="sub">Tap the candle to blow it out.</p>
+  <div class="cake-wrap" id="cakeWrap"><div class="flame" id="flame"></div><div class="candle"></div><div class="cake"><div class="icing"></div><div class="sprinkles">✦　·　✧　·　✦</div></div><div class="plate"></div></div>
+  <p id="wishText" class="wish">Your wish is on its way… 💫</p><button class="primary hidden" id="cakeNext">Open your gift →</button>
+</section>
+<section class="screen" id="gift">
+  <p class="eyebrow">A BOUQUET FOR YOU</p><h2>Some flowers, just because 🌹</h2><p class="sub">Tap the bouquet to make it bloom.</p>
+  <div class="bouquet" id="bouquet"><div class="stems"></div><div class="flower f1">🌹</div><div class="flower f2">🌷</div><div class="flower f3">🌹</div><div class="flower f4">🌸</div><div class="ribbon">🎀</div><div class="sparkle s1">✦</div><div class="sparkle s2">✧</div></div>
+  <div class="bubble">You make the world a little more beautiful.</div><button class="primary" id="giftNext">One more surprise →</button>
+</section>
+<section class="screen" id="balloons">
+  <p class="eyebrow">A LITTLE GAME</p><h2>Pop all 4 balloons!</h2><p class="sub">Each balloon has a message for you.</p>
+  <div class="balloon-grid" id="balloonGrid"><button class="balloon b1" aria-label="Pop balloon one">🎈</button><button class="balloon b2" aria-label="Pop balloon two">🎈</button><button class="balloon b3" aria-label="Pop balloon three">🎈</button><button class="balloon b4" aria-label="Pop balloon four">🎈</button></div>
+  <p id="balloonMsg" class="wish">4 wishes are waiting…</p><div class="tiny-note">Pop them to the beat ✨</div><button class="primary hidden" id="finalNext">Read your birthday note →</button>
+</section>
+<section class="screen" id="final">
+  <p class="eyebrow">FROM THE HEART</p><div class="final-icon">💌</div><h1>Happy Birthday,<br><em>Oas!</em></h1>
+  <p class="letter">May this year bring you endless reasons to smile, beautiful surprises, good people, big wins, and all the little things your heart has been wishing for. Keep shining, keep being wonderfully you, and never forget how special you are. 💗</p>
+  <p class="sign">With lots of love & birthday sparkle ✨</p><div class="confetti">🎉 🎂 🥳 🎁 💖</div>
+  <button class="primary" id="finaleParty">One last birthday beat! ✨</button><button class="secondary" id="replay">Replay the surprise ↻</button>
+</section>
+</main>
+<div class="progress" id="progress"><span></span></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body></html>

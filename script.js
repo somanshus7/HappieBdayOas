@@ -1,5 +1,5 @@
 // Oas' birthday mini-universe — all music is generated in-browser (no external song files).
-const SECRET_CODE = "200";
+const SECRET_CODE = "0007";
 const screens = [...document.querySelectorAll('.screen')];
 let current = 0, entered = "";
 const ids = ['gate','welcome','cake','gift','balloons','final'];
